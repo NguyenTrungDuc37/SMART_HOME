@@ -1,0 +1,12 @@
+[
+  {
+    "email": "admin@utc.com",
+    "password": "admin123",
+    "name": "Admin"
+  },
+  {
+    "email": "vuvietduy0202@gmail.com",
+    "password": "$2b$10$TxAZV1bx3uFHuU4NZ3ORjeOEo3zAdp9lZeQnYywuinpmCqQgTRiUa",
+    "name": "duy"
+  }
+]
