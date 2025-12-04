@@ -194,6 +194,7 @@ client.on("connect", () => {
     config.TOPICS.TEMP,
     config.TOPICS.HUMIDITY,
     config.TOPICS.GAS,
+    config.TOPICS.DOOR_STATUS
   ]);
 });
 
@@ -204,6 +205,11 @@ client.on("message", (topic, message) => {
   if (topic === config.TOPICS.GAS) sensorData.gas = val;
   sensorData.lastUpdate = new Date().toISOString();
   io.emit("sensor-update", sensorData);
+
+  if (topic === config.TOPICS.DOOR_STATUS) {
+    deviceStatus.door = val;
+    io.emit("device-status", deviceStatus);
+  }
 });
 
 io.on("connection", (socket) => {

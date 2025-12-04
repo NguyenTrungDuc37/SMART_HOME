@@ -1,16 +1,17 @@
 module.exports = {
   MQTT: {
-    host: "ke19046e.ala.asia-southeast1.emqxsl.com",
+    host: "w0e16d00.ala.asia-southeast1.emqxsl.com",
     port: 8883,
     protocol: "mqtts",
-    username: "DUY1",
+    username: "DUY2",
     password: "DUY",
     clientId: "server_smarthome_" + Math.random().toString(16).substr(2, 8),
   },
-  TOPICS: {
+    TOPICS: {
     LIGHT_CMD: "home/light/cmd",
     FAN_CMD: "home/fan/cmd",
     DOOR_CMD: "home/door/cmd",
+    DOOR_STATUS: "home/door/status",
     TEMP: "home/temp",
     HUMIDITY: "home/humidity",
     GAS: "home/gas",

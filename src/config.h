@@ -4,7 +4,7 @@
 // ============================================
 // CẤU HÌNH MQTT BROKER
 // ============================================
-#define MQTT_BROKER "ke19046e.ala.asia-southeast1.emqxsl.com"
+#define MQTT_BROKER "w0e16d00.ala.asia-southeast1.emqxsl.com"
 #define MQTT_PORT 8883  // MQTTS (TLS/SSL)
 
 // ============================================
